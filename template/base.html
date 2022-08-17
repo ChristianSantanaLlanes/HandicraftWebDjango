@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>{% block title %}{% endblock title %}</title>
+          <meta name="author" content="TITLE">
+          <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+          {% load static %}
+          <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+
+        {% include 'components/style.html' %}
+
+    </head>
+    <body>
+        {% include 'components/header.html' %}
+
+        <div class="top-spacer"></div>  
+
+        <main>
+            {% block content %}
+            {% endblock content %}
+        </main>
+        
+
+                        
+        {% include 'components/newsletter.html' %}
+
+        {% include 'components/footer.html' %}
+
+        {% include 'components/javascript.html' %}
+        {% block javascript %}
+        {% endblock javascript %}
+
+  </body>
+</html>
+
