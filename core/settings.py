@@ -106,6 +106,7 @@ INSTALLED_APPS = [
     "allauth.account",
     "allauth.socialaccount",
     "dj_rest_auth.registration",
+    'ckeditor',
     # Installed Apps
     "user",
     "app",
@@ -280,3 +281,9 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1:8000"]
 SITE_ID = 1
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'width': '100%'
+    },
+}

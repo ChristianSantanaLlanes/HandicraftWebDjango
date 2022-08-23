@@ -1412,7 +1412,7 @@
                             data: str,
                             type: type,
                             cache: false,
-                            url: 'php/quick_view.php',
+                            url: '/template/quick_view.html',
                             success: function(data) {
                                 if(data === 'Error') {
                                     alert('Ошибка передачи данных на сервер');

@@ -1,0 +1,194 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Handicraft | Lista-Productos{% endblock title %}
+{% block content %}
+    <div class="breadcrumbs">
+        <div class="container-fluid">
+            <div class="boxed">
+                <ul>
+                    <li><a href="/">home</a></li>
+                    <li><a href="#">lista</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid md-overflow-hidden">
+        <div class="boxed">
+            <div class="listing">
+                <div class="head-baner">
+                    <div class="image-block">
+                        <img src="{% static 'images/product/listing/photo-1.jpg' %}" alt="alt">
+                    </div>
+                    <div class="text-block">
+                        <span class="head">{{section.name}}</span>
+                        <p>Fashion for women who aren’t defined by trends, Buyshop offers a wardrobe brimming with party dresses, casual daywear and a killer collection of shoes and accessories to match. Dresses are our thing and we have an array tailored to all occasions including classic LBDs, party dresses to die for and those all-important work dresses.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="control">
+                            {% comment %} <select name="#" class="form-control">
+                                <option>Position</option>
+                                <option>Position</option>
+                                <option>Position</option>
+                            </select> {% endcomment %}
+                            {% comment %} <a href="#" class="tt-btn icon-arrow-up2"></a> {% endcomment %}
+                            <div class="float-block">
+                                <div class="btn-list-block">
+                                    <a href="#" class="btn-list-view-1 list">
+                                        <span class="icon icon-th-list"></span>
+                                    </a>
+                                    <a href="#" class="btn-list-view-2 grid active">
+                                        <span class="icon icon-th"></span>
+                                    </a>
+                                </div>
+                                {% comment %} <div class="select-quantity-block">
+                                    <span>Show</span>
+                                    <select name="#" class="form-control">
+                                        <option>12</option>
+                                        <option>16</option>
+                                        <option>20</option>
+                                    </select>
+                                </div> {% endcomment %}
+                            </div>
+                            <span class="info-text"><span>{{products.count}}</span> items</span>
+                        </div>
+                        <div class="row products-wrapper product-grid product-lg-3 product-md-2 product-sm-2 product-xs-2 ">
+                            <ul>
+                                
+                                {% for producto in products %}
+                                    <li>
+                                        <div class="product" data-product-id="{{producto.id}}">
+                                            
+                                            <div class="product-main-inside">
+                                                <a href="/product/{{producto.slug}}/">
+                                                    <div class="product-image-block">
+                                                        <img src="{{producto.imagenes.first}}" alt="product-1"/>
+                                                        
+                                                        <span class="btn-like"></span>
+                                                        <div class="product-label">
+                                                            <!-- <span class="product-label-discount">-20%</span> -->
+                                                        </div>
+                                                        
+                                                        <p class="price">
+                                                            <span class="single-price">${{producto.price}}</span>
+                                                        </p>
+                                                        <a href="/product/{{producto.slug}}/" class="product-button-add icon-add"></a>
+                                                    </div>
+                                                </a>
+                                                <div class="product-info-block">
+                                                    <div class="row">
+                                                        <div class="col-left">
+                                                            <div class="product-description">
+                                                                <a href="/product/{{producto.slug}}/">{{producto.name}}</a>
+                                                                <p>Made with the perfect blend of cotton and cashmere, this v-neck sweater is sharp and stylish. Wear it on its own or as a warm layer over t-shirts and button-ups.</p>
+                                                            </div>
+                                                            <ul class="stars">
+                                                                <li class="icon-star-empty active"></li>
+                                                                <li class="icon-star-empty active"></li>
+                                                                <li class="icon-star-empty active"></li>
+                                                                <li class="icon-star-empty active"></li>
+                                                                <li class="icon-star-empty"></li>
+                                                            </ul>
+                                                            <span class="text-1">Be the first to review this product</span>
+                                                            <a href="#" class="product-button-add icon-add"></a>
+                                                            <p class="price">
+                                                                <span class="text">Selling price:</span>
+                                                                <span class="single-price">${{producto.price}}</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-right">
+                                                            <ul class="product-color">
+                                                                <li>
+                                                                    <img src="{% static 'images/color/color-5.png' %}" alt="#"/>
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{% static 'images/color/color-4.png' %}" alt="#"/>
+                                                                </li>
+                                                                <li class="active">
+                                                                    <img src="{% static 'images/color/color-3.png' %}" alt="#"/>
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{% static 'images/color/color-2.png' %}" alt="#"/>
+                                                                </li>
+                                                                <li>
+                                                                    <img src="{% static 'images/color/color-1.png' %}" alt="#"/>
+                                                                </li>
+                                                            </ul>
+                                                            <ul class="product-size">
+                                                                <li>xl</li>
+                                                                <li class="disabled">l</li>
+                                                                <li class="disabled">m</li>
+                                                                <li>s</li>
+                                                                <li>xs</li>
+                                                            </ul>
+                                                            <div class="clearfix"></div>
+                                                            <a href="#" class="add-to-cart tt-btn-type1">
+                                                                <span class="icon-add icon"></span>
+                                                                <span>add to cart</span>
+                                                            </a>
+                                                            <div class="btn-2-3-group">
+                                                                <a href="#" class="tt-btn-2 active">
+                                                                    <span class="icon icon-heart"></span>
+                                                                </a> 
+                                                                <a href="#" class="tt-btn-3">
+                                                                    <span class="icon icon-stack"></span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-hidden-bl-wrapp-1">
+                                                <div class="product-hidden-block-1">
+                                                    <div class="hidden-body">
+                                                        <div class="row">
+                                                            <div class="col-left">
+                                                                <a href="#" class="add-to-compare">
+                                                                    <span class="icon-stack icon"></span>
+                                                                    <span class="text">compare</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-right">
+                                                                <ul class="stars-block">
+                                                                    <li class="icon-star-empty active"></li>
+                                                                    <li class="icon-star-empty active"></li>
+                                                                    <li class="icon-star-empty active"></li>
+                                                                    <li class="icon-star-empty"></li>
+                                                                    <li class="icon-star-empty"></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-hidden-block-2">
+                                                <ul class="preview-images-wrapp">
+                                                    {% for imagen in producto.imagenes.all %}
+                                                    <li>
+                                                        <img src="{{imagen.imagen}}" alt="preview" data-preview="{{imagen.imagen}}"/>
+                                                    </li>
+                                                    {% endfor %}
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                {% endfor %}
+                                
+                                
+                            </ul>
+                        </div>
+                        {% comment %} <a href="#" class="btn tt-btn-type1 btn-load-more">load more</a> {% endcomment %}
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+<!-- {% block javascript %}
+<script src="{% static 'vue/app/header_app.js' %}"></script>
+{% endblock javascript %} -->

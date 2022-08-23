@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Handicraft | {{post.name}}{% endblock title %}
+{% block content %}
+    <div class="breadcrumbs">
+        <div class="container-fluid">
+            <div class="boxed">
+                <ul>
+                    <li><a href="/">home</a></li>
+                    <li><a href="#">{{post.name}}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="blog-posts-single">
+            <div class="boxed">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <div class="make-post">
+                            <img src="images/product/blog_simple/photo-1.jpg" alt="image"/>
+                            <div class="curtain">
+                                <span class="text-1">December 5, 2016</span>
+                                <H1>
+                                    <a href="#" class="text-2">{{post.name}}</a>
+                                </H1>
+                                {% comment %} <div class="author">
+                                    <a href="#" class="image-block move-photo scale overflow-visible">
+                                        <img src="images/product/blog_simple/author/photo-1.png" alt="photo"/>
+                                    </a>
+                                    <a href="#">Paul Grant</a>
+                                </div> {% endcomment %}
+                                {% comment %} <div class="info-block">
+                                    <div class="icon-comment-square icon"></div>
+                                    <div class="text">36 <span class="text-comment">comments</span></div>
+                                    <div class="icon-head icon"></div>
+                                    <div class="text">1241</div>
+                                </div> {% endcomment %}
+                                <div class="social">
+                                    <a href="#">
+                                        <span class="icon-facebook icon"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="icon-twitter icon"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="icon-google icon"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="icon-tumblr icon"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="text-block">
+                            {{post.content|safe}}
+                        </div>  
+                        {% comment %} <div class="comment-section">
+                            <span class="head">comment<span class="tt-counter">2</span></span>
+                            <div class="question">
+                                <div class="col-left">
+                                    <a href="#" class="image-block">
+                                        <img src="images/product/blog_simple/image-1.jpg" alt="image"/>
+                                    </a>
+                                </div>
+                                <div class="col-right">
+                                    <a href="#" class="text-1">user name</a>
+                                    <p class="text-2">December 5, 2016</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec eros tellus, scelerisque nec, rhoncus eget, laoreet sit amet, nunc. Ut sit amet turpis. In est arcu, sollicitudin eu, vehicula venenatis, tempor vitae, est. Praesent vitae dui. Morbi id tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                    <a href="#" class="btn tt-btn-type1">retry</a>
+                                </div>
+                            </div>
+                            <div class="answer">
+                                <div class="col-left">
+                                    <a href="#" class="image-block">
+                                        <img src="images/product/blog_simple/image-1.jpg" alt="image"/>
+                                    </a>
+                                </div>
+                                <div class="col-right">
+                                    <a href="#" class="text-1">user name</a>
+                                    <p class="text-2">December 5, 2016</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec eros tellus, scelerisque nec, rhoncus eget, laoreet sit amet, nunc. Ut sit amet turpis. In est arcu, sollicitudin eu, vehicula venenatis, tempor vitae, est. Praesent vitae dui. Morbi id tellus. Cum sociis natoque penatibus et magnis dis.</p>
+                                    <a href="#" class="btn tt-btn-type1">retry</a>
+                                </div>
+                            </div>
+                        </div> {% endcomment %}
+                        {% comment %} <div class="form-section">
+                            <span class="head">add a comment</span>
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" name="#" class="tt-input" placeholder="First name" required="required">
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" name="#" class="tt-input" placeholder="Last name" required="required">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <input type="email" name="#" class="tt-input" placeholder="E-mail Address" required="required">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <textarea name="#" class="tt-textarea"  placeholder="Message" required="required"></textarea>
+                                        <input type="submit" class="tt-btn-type1" value="place a comment">
+                                    </div>
+                                </div>
+                            </form>
+                        </div> {% endcomment %}
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="blog-sidebar">
+                            <H2 class="head-text-type2">Post Categories</H2>
+                            <ul class="tt-list2">
+                                {% for section in sections %}
+                                    <li><a href="#">{{section.name}}<span class="tt-counter">2</span></a></li>
+                                {% endfor %}
+                            </ul>
+                            
+                            <H2 class="head-text-type2">Recent PostS</H2>
+                            <div class="recent">
+                                {% for post in last_post %}
+                                    <div class="post-sidebar clearfix">
+                                        <a href="/list/blogs/{{post.slug}}/" class="move-photo move-left">
+                                            <img src="{{post.imagen}}" alt="image"/>
+                                        </a>
+                                        <div>
+                                            <span class="text-1">December 5, 2016</span>
+                                            <h3>
+                                                <a href="/list/blogs/{{post.slug}}/" class="text-2">{{post.name}}</a>
+                                            </h3>
+                                            <span class="text-3">{{post.description}}...</span>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

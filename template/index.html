@@ -521,1152 +521,921 @@
     </div>
 </div> {% endcomment %}
 
-<div class="container-fluid">
-    <div class="product-navigation tt-menu-type1">
-        <ul class="selected-item">
-            <li>
-                <a href="#">new products
-                    <span class="label-number">(12)</span>
-                </a>
-            </li>
-        </ul>
-        <ul>
-            <li class="button" data-filter="*">
-                <a href="#">all</a>
-            </li>
-            <li>
-                <span>/</span>
-            </li>
-            <li class="button" data-filter=".sale">
-                <a href="#" class="is-checked">on sale
-                    <span class="label-number">(26)</span>
-                </a>
-            </li>
-            <li>
-                <span>/</span>
-            </li>
-            <li class="button" data-filter=".new">
-                <a href="#">new products
-                    <span class="label-number">(12)</span>
-                </a>
-            </li>
-            <li>
-                <span>/</span>
-            </li>
-            <li class="button" data-filter=".best">
-                <a href="#">best sellers
-                    <span class="label-number">(8)</span>
-                </a>
-            </li>
-            <li>
-                <span>/</span>
-            </li>
-            <li class="button" data-filter=".top">
-                <a href="#">top rated
-                    <span class="label-number">(11)</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-
-<!-- PRODUCT -->
-<div class="container-fluid none-padding-small">
-    <div class="boxed md-overflow-hidden">
-        <div class="row products-wrapper product-lg-4 product-md-3 product-sm-2 product-xs-2 product-grid">
-            <ul class="isotope">
-                <li class="grid-item best">
-                    <div class="product right-hover" data-product-id="1">
-                        <div class="substrate"></div>
-                        <div class="product-main-inside">
-                            <div class="product-image-block">
-                                <img src="{% static 'images/product/product_images/men/1_1.jpg' %}" alt="product"/>
-                                <div class="button-open">
-                                    <span class="icon-open icon"></span>
-                                </div>
-                                <span class="btn-like active"></span>
-                                <div class="curtain-1 curtain">
-                                    <div class="fon"></div>
-                                    <span class="text">out of stock</span>
-                                </div>
-                                <p class="price">
-                                    <span class="single-price">$199.99</span>
-                                </p>
-                                <a href="#" class="product-button-add icon-add"></a>
-                            </div>
-                            <div class="product-info-block">
-                                <div class="row">
-                                    <div class="col-left">
-                                        <div class="product-description">
-                                            <a href="#">ladies` jogging top</a>
-                                        </div>
-                                        <a href="#" class="product-button-add icon-add"></a>
-                                        <p class="price">
-                                            <span class="single-price">$199.99</span>
-                                        </p>
-                                    </div>
-                                    <div class="col-right">
-                                        <ul class="product-color">
-                                            <li>
-                                                <img src="{% static 'images/color/color-5.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-4.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-3.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-2.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-1.png' %}" alt="#"/>
-                                            </li>
-                                        </ul>
-                                        <ul class="product-size">
-                                            <li>xl</li>
-                                            <li class="disabled">l</li>
-                                            <li class="disabled">m</li>
-                                            <li>s</li>
-                                            <li>xs</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-hidden-bl-wrapp-1">
-                            <div class="product-hidden-block-1">
-                                <div class="hidden-body">
-                                    <div class="row">
-                                        <div class="col-left">
-                                            <a href="#">
-                                                <span class="icon-stack icon"></span>
-                                                <span class="text">compare</span>
-                                            </a>
-                                        </div>
-                                        <div class="col-right">
-                                            <ul class="stars-block">
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty"></li>
-                                                <li class="icon-star-empty"></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-hidden-block-2">
-                            <ul class="preview-images-wrapp">
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/1_1.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/1_1.jpg' %}"/>
-                                </li>
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/1_2.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/1_2.jpg' %}"/>
-                                </li>
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/1_3.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/1_3.jpg' %}"/>
-                                </li>
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/1_4.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/1_4.jpg' %}"/>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+<div>
+    
+    <!-- <div class="container-fluid">
+        <div class="product-navigation tt-menu-type1">
+            <ul>
+                <li class="button" data-filter="*">
+                    <a href="#" class="is-checked">all</a>
+                    <span>/</span>
                 </li>
-
-                <li class="grid-item sale best new">
-                    <div class="product" data-product-id="2">
-                        <div class="substrate"></div>
-                        <div class="product-main-inside">
-                            <div class="product-image-block">
-                                <img src="{% static 'images/product/product_images/men/2_1.jpg' %}" alt="product"/>
-                                <div class="button-open">
-                                    <span class="icon-open icon"></span>
-                                </div>
-                                <span class="btn-like"></span>
-                                <div class="product-label">
-                                    <span class="product-label-discount">-20%</span>
-                                    <span class="product-label-new">new</span>
-                                </div>
-                                <div class="curtain-2 curtain">
-                                    <div class="fon"></div>
-                                    <div class="timer-block">
-                                        <span class="text">This limited offer ends in:</span>
-                                        <div class="timer">
-                                            <div class="section day">
-                                                <div class="number">21</div>
-                                                <div class="sub-text">days</div>
-                                            </div>
-                                            <div class="separator">/</div>
-                                            <div class="section hrs">
-                                                <div class="number">21</div>
-                                                <div class="sub-text">hrs</div>
-                                            </div>
-                                            <div class="separator">:</div>
-                                            <div class="section min">
-                                                <div class="number">10</div>
-                                                <div class="sub-text">min</div>
-                                            </div>
-                                            <div class="separator">:</div>
-                                            <div class="section sec">
-                                                <div class="number">54</div>
-                                                <div class="sub-text">sec</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="price">
-                                    <span class="special-price">$185.22</span>
-                                    <span class="old-price">$199.95</span>
-                                </p>
-                                <a href="#" class="product-button-add icon-add"></a>
-                            </div>
-                            <div class="product-info-block">
-                                <div class="row">
-                                    <div class="col-left">
-                                        <div class="product-description">
-                                            <a href="#">ladies` jogging top</a>
-                                        </div>
-                                        <a href="#" class="product-button-add icon-add"></a>
-                                        <p class="price">
-                                            <span class="special-price">$185.22</span>
-                                            <span class="old-price">$199.95</span>
-                                        </p>
-                                    </div>
-                                    <div class="col-right">
-                                        <ul class="product-color">
-                                            <li>
-                                                <img src="{% static 'images/color/color-5.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-4.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-3.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-2.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-1.png' %}" alt="#"/>
-                                            </li>
-                                        </ul>
-                                        <ul class="product-size">
-                                            <li>xl</li>
-                                            <li class="disabled">l</li>
-                                            <li class="disabled">m</li>
-                                            <li>s</li>
-                                            <li>xs</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-hidden-bl-wrapp-1">
-                            <div class="product-hidden-block-1">
-                                <div class="hidden-body">
-                                    <div class="row">
-                                        <div class="col-left">
-                                            <a href="#">
-                                                <span class="icon-stack icon"></span>
-                                                <span class="text">compare</span>
-                                            </a>
-                                        </div>
-                                        <div class="col-right">
-                                            <ul class="stars-block">
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty"></li>
-                                                <li class="icon-star-empty"></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-hidden-block-2">
-                            <ul class="preview-images-wrapp">
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/2_1.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/2_1.jpg' %}"/>
-                                </li>
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/2_2.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/2_2.jpg' %}"/>
-                                </li>
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/2_3.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/2_3.jpg' %}"/>
-                                </li>
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/2_4.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/2_4.jpg' %}"/>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <li v-for="(element, i) in lista_secciones" :key="i" class="button" :data-filter="'.'+element.name.toLowerCase()">
+                    <a href="#" >{$ element.name $}
+                        <span class="label-number">(26)</span>
+                        <span>/</span>
+                    </a>
                 </li>
-
-                <li class="grid-item new">
-                    <div class="product"  data-product-id="3">
-                        <div class="substrate"></div>
-                        <div class="product-main-inside">
-                            <div class="product-image-block">
-                                <img src="{% static 'images/product/product_images/men/3_1.jpg' %}" alt="product"/>
-                                <div class="button-open">
-                                    <span class="icon-open icon"></span>
-                                </div>
-                                <span class="btn-like"></span>
-                                <div class="product-label">
-                                    <span class="product-label-new">new</span>
-                                </div>
-                                <p class="price">
-                                    <span class="single-price">$199.99</span>
-                                </p>
-                                <a href="#" class="product-button-add icon-add"></a>
-                            </div>
-                            <div class="product-info-block">
-                                <div class="row">
-                                    <div class="col-left">
-                                        <div class="product-description">
-                                            <a href="#">ladies` jogging top</a>
-                                        </div>
-                                        <a href="#" class="product-button-add icon-add"></a>
-                                        <p class="price">
-                                            <span class="single-price">$199.99</span>
-                                        </p>
-                                    </div>
-                                    <div class="col-right">
-                                        <ul class="product-color">
-                                            <li>
-                                                <img src="{% static 'images/color/color-5.png' %}" alt="alt"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-4.png' %}" alt="alt"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-3.png' %}" alt="alt"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-2.png' %}" alt="alt"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-1.png' %}" alt="alt"/>
-                                            </li>
-                                        </ul>
-                                        <ul class="product-size">
-                                            <li>xl</li>
-                                            <li class="disabled">l</li>
-                                            <li class="disabled">m</li>
-                                            <li>s</li>
-                                            <li>xs</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-hidden-bl-wrapp-1">
-                            <div class="product-hidden-block-1">
-                                <div class="hidden-body">
-                                    <div class="row">
-                                        <div class="col-left">
-                                            <a href="#">
-                                                <span class="icon-stack icon"></span>
-                                                <span class="text">compare</span>
-                                            </a>
-                                        </div>
-                                        <div class="col-right">
-                                            <ul class="stars-block">
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty"></li>
-                                                <li class="icon-star-empty"></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-hidden-block-2">
-                            <ul class="preview-images-wrapp">
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/3_1.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/3_1.jpg' %}"/>
-                                </li>
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/3_2.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/3_2.jpg' %}"/>
-                                </li>
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/3_3.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/3_3.jpg' %}"/>
-                                </li>
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/3_4.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/3_4.jpg' %}"/>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                
+                
+                <li class="button" data-filter=".new">
+                    <a href="#">new products
+                        <span class="label-number">(12)</span>
+                    </a>
                 </li>
-
-                <li class="grid-item sale top">
-                    <div class="product"  data-product-id="4">
-                        <div class="substrate"></div>
-                        <div class="product-main-inside">
-                            <div class="product-image-block">
-                                <img src="{% static 'images/product/product_images/men/4_1.jpg' %}" alt="product"/>
-                                <div class="button-open">
-                                    <span class="icon-open icon"></span>
-                                </div>
-                                <span class="btn-like active"></span>
-                                <div class="product-label">
-                                    <span class="product-label-discount">-20%</span>
-                                </div>
-                                <p class="price">
-                                    <span class="special-price">$185.22</span>
-                                    <span class="old-price">$199.95</span>
-                                </p>
-                                <a href="#" class="product-button-add icon-add"></a>
-                            </div>
-                            <div class="product-info-block">
-                                <div class="row">
-                                    <div class="col-left">
-                                        <div class="product-description">
-                                            <a href="#">ladies` jogging top</a>
-                                        </div>
-                                        <a href="#" class="product-button-add icon-add"></a>
-                                        <p class="price">
-                                            <span class="special-price">$185.22</span>
-                                            <span class="old-price">$199.95</span>
-                                        </p>
-                                    </div>
-                                    <div class="col-right">
-                                        <ul class="product-color">
-                                            <li>
-                                                <img src="{% static 'images/color/color-5.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-4.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-3.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-2.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-1.png' %}" alt="#"/>
-                                            </li>
-                                        </ul>
-                                        <ul class="product-size">
-                                            <li>xl</li>
-                                            <li class="disabled">l</li>
-                                            <li class="disabled">m</li>
-                                            <li>s</li>
-                                            <li>xs</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-hidden-bl-wrapp-1">
-                            <div class="product-hidden-block-1">
-                                <div class="hidden-body">
-                                    <div class="row">
-                                        <div class="col-left">
-                                            <a href="#">
-                                                <span class="icon-stack icon"></span>
-                                                <span class="text">compare</span>
-                                            </a>
-                                        </div>
-                                        <div class="col-right">
-                                            <ul class="stars-block">
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty"></li>
-                                                <li class="icon-star-empty"></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-hidden-block-2">
-                            <ul class="preview-images-wrapp">
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/4_1.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/4_1.jpg' %}"/>
-                                </li>
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/4_2.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/4_2.jpg' %}"/>
-                                </li>
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/4_3.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/4_3.jpg' %}"/>
-                                </li>
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/4_4.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/4_4.jpg' %}"/>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <li>
+                    <span>/</span>
                 </li>
-
-                <li class="grid-item best top">
-                    <div class="product right-hover"  data-product-id="5">
-                        <div class="substrate"></div>
-                        <div class="product-main-inside">
-                            <div class="product-image-block">
-                                <img src="{% static 'images/product/product_images/men/5_1.jpg' %}" alt="product"/>
-                                <div class="button-open">
-                                    <span class="icon-open icon"></span>
-                                </div>
-                                <span class="btn-like"></span>
-                                <p class="price">
-                                    <span class="single-price">$199.99</span>
-                                </p>
-                                <a href="#" class="product-button-add icon-add"></a>
-                            </div>
-                            <div class="product-info-block">
-                                <div class="row">
-                                    <div class="col-left">
-                                        <div class="product-description">
-                                            <a href="#">ladies` jogging top</a>
-                                        </div>
-                                        <a href="#" class="product-button-add icon-add"></a>
-                                        <p class="price">
-                                            <span class="single-price">$199.99</span>
-                                        </p>
-                                    </div>
-                                    <div class="col-right">
-                                        <ul class="product-color">
-                                            <li>
-                                                <img src="{% static 'images/color/color-5.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-4.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-3.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-2.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-1.png' %}" alt="#"/>
-                                            </li>
-                                        </ul>
-                                        <ul class="product-size">
-                                            <li>xl</li>
-                                            <li class="disabled">l</li>
-                                            <li class="disabled">m</li>
-                                            <li>s</li>
-                                            <li>xs</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-hidden-bl-wrapp-1">
-                            <div class="product-hidden-block-1">
-                                <div class="hidden-body">
-                                    <div class="row">
-                                        <div class="col-left">
-                                            <a href="#">
-                                                <span class="icon-stack icon"></span>
-                                                <span class="text">compare</span>
-                                            </a>
-                                        </div>
-                                        <div class="col-right">
-                                            <ul class="stars-block">
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty"></li>
-                                                <li class="icon-star-empty"></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-hidden-block-2">
-                            <ul class="preview-images-wrapp">
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/5_1.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/5_1.jpg' %}"/>
-                                </li>
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/5_2.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/5_2.jpg' %}"/>
-                                </li>
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/5_3.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/5_3.jpg' %}"/>
-                                </li>
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/5_4.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/5_4.jpg' %}"/>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <li class="button" data-filter=".best">
+                    <a href="#">best sellers
+                        <span class="label-number">(8)</span>
+                    </a>
                 </li>
-
-                <li class="grid-item sale top">
-                    <div class="product no-preview"  data-product-id="6">
-                        <div class="substrate"></div>
-                        <div class="product-main-inside">
-                            <div class="product-image-block">
-                                <img src="{% static 'images/product/product_images/men/6_1.jpg' %}" alt="product"/>
-                                <div class="button-open">
-                                    <span class="icon-open icon"></span>
-                                </div>
-                                <span class="btn-like"></span>
-                                <div class="product-label">
-                                    <span class="product-label-discount">-20%</span>
-                                </div>
-                                <div class="curtain-1 curtain">
-                                    <div class="fon"></div>
-                                    <span class="text">out of stock</span>
-                                </div>
-                                <p class="price">
-                                    <span class="special-price">$185.22</span>
-                                    <span class="old-price">$199.95</span>
-                                </p>
-                                <a href="#" class="product-button-add icon-add"></a>
-                            </div>
-                            <div class="product-info-block">
-                                <div class="row">
-                                    <div class="col-left">
-                                        <div class="product-description">
-                                            <a href="#">ladies` jogging top</a>
-                                        </div>
-                                        <a href="#" class="product-button-add icon-add"></a>
-                                        <p class="price">
-                                            <span class="special-price">$185.22</span>
-                                            <span class="old-price">$199.95</span>
-                                        </p>
-                                    </div>
-                                    <div class="col-right">
-                                        <ul class="product-color">
-                                            <li>
-                                                <img src="{% static 'images/color/color-5.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-4.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-3.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-2.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-1.png' %}" alt="#"/>
-                                            </li>
-                                        </ul>
-                                        <ul class="product-size">
-                                            <li>xl</li>
-                                            <li class="disabled">l</li>
-                                            <li class="disabled">m</li>
-                                            <li>s</li>
-                                            <li>xs</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-hidden-bl-wrapp-1">
-                            <div class="product-hidden-block-1">
-                                <div class="hidden-body">
-                                    <div class="row">
-                                        <div class="col-left">
-                                            <a href="#">
-                                                <span class="icon-stack icon"></span>
-                                                <span class="text">compare</span>
-                                            </a>
-                                        </div>
-                                        <div class="col-right">
-                                            <ul class="stars-block">
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty"></li>
-                                                <li class="icon-star-empty"></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <li>
+                    <span>/</span>
                 </li>
-
-                <li class="grid-item new top">
-                    <div class="product"  data-product-id="7">
-                        <div class="substrate"></div>
-                        <div class="product-main-inside">
-                            <div class="product-image-block">
-                                <img src="{% static 'images/product/product_images/men/7_1.jpg' %}" alt="product"/>
-                                <div class="button-open">
-                                    <span class="icon-open icon"></span>
-                                </div>
-                                <span class="btn-like"></span>
-                                <div class="product-label">
-                                    <span class="product-label-new">new</span>
-                                </div>
-                                <p class="price">
-                                    <span class="single-price">$199.99</span>
-                                </p>
-                                <a href="#" class="product-button-add icon-add"></a>
-                            </div>
-                            <div class="product-info-block">
-                                <div class="row">
-                                    <div class="col-left">
-                                        <div class="product-description">
-                                            <a href="#">ladies` jogging top</a>
-                                        </div>
-                                        <a href="#" class="product-button-add icon-add"></a>
-                                        <p class="price">
-                                            <span class="single-price">$199.99</span>
-                                        </p>
-                                    </div>
-                                    <div class="col-right">
-                                        <ul class="product-color">
-                                            <li>
-                                                <img src="{% static 'images/color/color-5.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-4.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-3.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-2.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-1.png' %}" alt="#"/>
-                                            </li>
-                                        </ul>
-                                        <ul class="product-size">
-                                            <li>xl</li>
-                                            <li class="disabled">l</li>
-                                            <li class="disabled">m</li>
-                                            <li>s</li>
-                                            <li>xs</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-hidden-bl-wrapp-1">
-                            <div class="product-hidden-block-1">
-                                <div class="hidden-body">
-                                    <div class="row">
-                                        <div class="col-left">
-                                            <a href="#" class="add-to-compare">
-                                                <span class="icon-stack icon"></span>
-                                                <span class="text">compare</span>
-                                            </a>
-                                        </div>
-                                        <div class="col-right">
-                                            <ul class="stars-block">
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty"></li>
-                                                <li class="icon-star-empty"></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-hidden-block-2">
-                            <ul class="preview-images-wrapp">
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/7_1.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/7_1.jpg' %}"/>
-                                </li>
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/7_2.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/7_2.jpg' %}"/>
-                                </li>
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/7_3.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/7_3.jpg' %}"/>
-                                </li>
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/7_4.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/7_4.jpg' %}"/>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="grid-item sale">
-                    <div class="product"  data-product-id="8">
-                        <div class="substrate"></div>
-                        <div class="product-main-inside">
-                            <div class="product-image-block">
-                                <img src="{% static 'images/product/product_images/men/8_1.jpg' %}" alt="product"/>
-                                <div class="button-open">
-                                    <span class="icon-open icon"></span>
-                                </div>
-                                <span class="btn-like"></span>
-                                <div class="product-label">
-                                    <span class="product-label-discount">-20%</span>
-                                </div>
-                                <p class="price">
-                                    <span class="special-price">$185.22</span>
-                                    <span class="old-price">$199.95</span>
-                                </p>
-                                <a href="#" class="product-button-add icon-add"></a>
-                            </div>
-                            <div class="product-info-block">
-                                <div class="row">
-                                    <div class="col-left">
-                                        <div class="product-description">
-                                            <a href="#">ladies` jogging top</a>
-                                        </div>
-                                        <a href="#" class="product-button-add icon-add"></a>
-                                        <p class="price">
-                                            <span class="special-price">$185.22</span>
-                                            <span class="old-price">$199.95</span>
-                                        </p>
-                                    </div>
-                                    <div class="col-right">
-                                        <ul class="product-color">
-                                            <li>
-                                                <img src="{% static 'images/color/color-5.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-4.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-3.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-2.png' %}" alt="#"/>
-                                            </li>
-                                            <li>
-                                                <img src="{% static 'images/color/color-1.png' %}" alt="#"/>
-                                            </li>
-                                        </ul>
-                                        <ul class="product-size">
-                                            <li>xl</li>
-                                            <li class="disabled">l</li>
-                                            <li class="disabled">m</li>
-                                            <li>s</li>
-                                            <li>xs</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-hidden-bl-wrapp-1">
-                            <div class="product-hidden-block-1">
-                                <div class="hidden-body">
-                                    <div class="row">
-                                        <div class="col-left">
-                                            <a href="#">
-                                                <span class="icon-stack icon"></span>
-                                                <span class="text">compare</span>
-                                            </a>
-                                        </div>
-                                        <div class="col-right">
-                                            <ul class="stars-block">
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty active"></li>
-                                                <li class="icon-star-empty"></li>
-                                                <li class="icon-star-empty"></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-hidden-block-2">
-                            <ul class="preview-images-wrapp">
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/8_1.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/8_1.jpg' %}"/>
-                                </li>
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/8_2.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/8_2.jpg' %}"/>
-                                </li>
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/8_3.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/8_3.jpg' %}"/>
-                                </li>
-                                <li>
-                                    <img src="{% static 'images/product/product_images/men/8_4.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/8_4.jpg' %}"/>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
+                <li class="button" data-filter=".top">
+                    <a href="#">top rated
+                        <span class="label-number">(11)</span>
+                    </a>
+                </li>\
             </ul>
         </div>
-    </div>
-</div>
-
-
-
-<!-- BLOG -->
-<div class="container-fluid none-padding">
-    <div class="blog owl-carousel">
-        <div class="blog-box blog-box-1">
-            <img src="{% static 'images/product/home_page/blog/photo-1.jpg' %}" alt="blog">
-            <div class="border-block">
-                <div class="curtain"></div>
-                <div class="text-1">December 5, 2016</div>
-                <h3 class="text-2">make it happen: a wallpaper</h3>
-                <div class="info-block">
-                    <div class="icon-comment-square icon"></div>
-                    <div class="text">36 <span class="text-comment">comments</span></div>
-                    <div class="icon-head icon"></div>
-                    <div class="text">1241</div>
-                </div>
-                <a href="#" class="tt-btn">read post</a>
-            </div>
-        </div>
-        <div class="blog-box blog-box-2">
-            <img src="{% static 'images/product/home_page/blog/photo-2.jpg' %}" alt="blog"/>
-            <div class="border-block">
-                <div class="curtain"></div>
-                <div class="text-1">December 5, 2016</div>
-                <h3 class="text-2">realistic new year's resolutions for blogging</h3>
-                <div class="info-block">
-                    <div class="icon-comment-square icon"></div>
-                    <div class="text">36 <span class="text-comment">comments</span></div>
-                    <div class="icon-head icon"></div>
-                    <div class="text">1241</div>
-                </div>
-                <a href="#" class="tt-btn">read post</a>
-            </div>
-        </div>
-        <div class="blog-box blog-box-3">
-            <img src="{% static 'images/product/home_page/blog/photo-3.jpg' %}" alt="blog"/>
-            <div class="border-block">
-                <div class="curtain"></div>
-                <div class="text-1">December 5, 2016</div>
-                <h3 class="text-2">three ways to wear a camel coat</h3>
-                <div class="info-block">
-                    <div class="icon-comment-square icon"></div>
-                    <div class="text">36 <span class="text-comment">comments</span></div>
-                    <div class="icon-head icon"></div>
-                    <div class="text">1241</div>
-                </div>
-                <a href="#" class="tt-btn">read post</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<h2 class="head-text head-text-2">Our Brands</h2>
-
-<!-- BRAND-CAROUSEL -->
-<div class="container-fluid">
-    <div class="boxed">
-        <ul class="brand-carousel owl-carousel">
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/product/home_page/brand/photo-1.png' %}" alt="Owl Image"/>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/product/home_page/brand/photo-2.png' %}" alt="Owl Image"/>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/product/home_page/brand/photo-3.png' %}" alt="Owl Image"/>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/product/home_page/brand/photo-4.png' %}" alt="Owl Image"/>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/product/home_page/brand/photo-5.png' %}" alt="Owl Image"/>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/product/home_page/brand/photo-6.png' %}" alt="Owl Image"/>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/product/home_page/brand/photo-1.png' %}" alt="Owl Image"/>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/product/home_page/brand/photo-2.png' %}" alt="Owl Image"/>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/product/home_page/brand/photo-3.png' %}" alt="Owl Image"/>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/product/home_page/brand/photo-5.png' %}" alt="Owl Image"/>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/product/home_page/brand/photo-4.png' %}" alt="Owl Image"/>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/product/home_page/brand/photo-6.png' %}" alt="Owl Image"/>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/product/home_page/brand/photo-1.png' %}" alt="Owl Image"/>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/product/home_page/brand/photo-2.png' %}" alt="Owl Image"/>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/product/home_page/brand/photo-3.png' %}" alt="Owl Image"/>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/product/home_page/brand/photo-4.png' %}" alt="Owl Image"/>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/product/home_page/brand/photo-5.png' %}" alt="Owl Image"/>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'images/product/home_page/brand/photo-6.png' %}" alt="Owl Image"/>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-
-<a href="#" class="baner-4">
-    <img src="{% static 'images/product/home_page/footer/photo-1.jpg' %}" alt="footer-image"/>
-    <span class="text">get new <span class="purple">buy</span>now right now!</span>
-    <div class="tt-btn">buy now!</div>
-</a>
-{% endblock content %}
-                        
-        
-
-
-        {% comment %} <div class="modal fade quick-view-modal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                    <div class="modal-body">
-                        <div class="code-plug">
-                            <div class="image-block">
-                                <div class="main-image">
-                                    <img src="images/product/product_images/men/1_1.jpg" alt="alt">
+    </div> -->
+    <!-- PRODUCT -->
+    <h2 class="head-text head-text-2" style="text-align: center;">Nuestros Productos</h2>
+    <div class="container-fluid none-padding-small">
+        <div class="boxed md-overflow-hidden">
+            <div class="row products-wrapper product-lg-4 product-md-3 product-sm-2 product-xs-2 product-grid">
+                <ul class="isotope">
+                    {% for producto in productos %}
+                        <li class="grid-item">
+                            <div class="product" data-product-id="{{producto.id}}">
+                                <div class="substrate"></div>
+                                <div class="product-main-inside">
+                                    <a href="/product/{{producto.slug}}/">
+                                        <div class="product-image-block">
+                                            <img src="{{producto.imagenes.first}}" alt="product"/>
+                                            
+                                            <span class="btn-like active"></span>
+                                            {% if producto.en_venta == 'false' %}
+                                                <div class="curtain-1 curtain">
+                                                    <div class="fon"></div>
+                                                    <span class="text">out of stock</span>
+                                                </div>
+                                            {% endif %}
+                                            <p class="price">
+                                                <span class="single-price">${{producto.price}}</span>
+                                            </p>
+                                            <a href="/product/{{producto.slug}}/" class="product-button-add icon-add"></a>
+                                        </div>
+                                    </a>
+                                    <div class="product-info-block">
+                                        <div class="row">
+                                            <div class="col-left">
+                                                <div class="product-description">
+                                                    <a href="/product/{{producto.slug}}/">{{producto.name}}</a>
+                                                </div>
+                                                <a href="#" class="product-button-add icon-add"></a>
+                                                <p class="price">
+                                                    <span class="single-price">${{producto.price}}</span>
+                                                </p>
+                                            </div>
+                                            <div class="col-right">
+                                                <ul class="product-color">
+                                                    <li>
+                                                        <img src="{% static 'images/color/color-5.png' %}" alt="#"/>
+                                                    </li>
+                                                    <li>
+                                                        <img src="{% static 'images/color/color-4.png' %}" alt="#"/>
+                                                    </li>
+                                                    <li>
+                                                        <img src="{% static 'images/color/color-3.png' %}" alt="#"/>
+                                                    </li>
+                                                    <li>
+                                                        <img src="{% static 'images/color/color-2.png' %}" alt="#"/>
+                                                    </li>
+                                                    <li>
+                                                        <img src="{% static 'images/color/color-1.png' %}" alt="#"/>
+                                                    </li>
+                                                </ul>
+                                                <ul class="product-size">
+                                                    <li>xl</li>
+                                                    <li class="disabled">l</li>
+                                                    <li class="disabled">m</li>
+                                                    <li>s</li>
+                                                    <li>xs</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="preview-image">
-                                    <img src="images/product/product_images/men/1_1.jpg" alt="alt" data-preview="images/product/product_images/men/1_1.jpg">
-                                    <img src="images/product/product_images/men/1_2.jpg" alt="alt" data-preview="images/product/product_images/men/1_2.jpg">
-                                    <img src="images/product/product_images/men/1_3.jpg" alt="alt" data-preview="images/product/product_images/men/1_3.jpg">
-                                    <img src="images/product/product_images/men/1_4.jpg" alt="alt" data-preview="images/product/product_images/men/1_4.jpg">
+                                <div class="product-hidden-bl-wrapp-1">
+                                    <div class="product-hidden-block-1">
+                                        <div class="hidden-body">
+                                            <div class="row">
+                                                <div class="col-left">
+                                                    <a href="#">
+                                                        <span class="icon-stack icon"></span>
+                                                        <span class="text">compare</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-right">
+                                                    <ul class="stars-block">
+                                                        <li class="icon-star-empty active"></li>
+                                                        <li class="icon-star-empty active"></li>
+                                                        <li class="icon-star-empty active"></li>
+                                                        <li class="icon-star-empty"></li>
+                                                        <li class="icon-star-empty"></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-hidden-block-2">
+                                    <ul class="preview-images-wrapp">
+                                        {% for imagenes in producto.imagenes.all %}
+                                        <li>
+                                            <img src="{{imagenes.imagen}}" alt="preview" data-preview="{{imagenes.imagen}}"/>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="info-block">
-                                <span class="name">hooded waistcoat
-                                    <span class="label">In Stock</span>
-                                </span>
-                                <div class="clearfix"></div>
-                                <ul class="stars">
-                                    <li class="icon-star-empty active"></li>
-                                    <li class="icon-star-empty active"></li>
-                                    <li class="icon-star-empty active"></li>
-                                    <li class="icon-star-empty active"></li>
-                                    <li class="icon-star-empty"></li>
+                        </li>
+                    {% endfor %}
+    
+                    <!-- <li class="grid-item sale best new">
+                        <div class="product hogar" data-product-id="2">
+                            <div class="substrate"></div>
+                            <div class="product-main-inside">
+                                <div class="product-image-block">
+                                    <img src="{% static 'images/product/product_images/men/2_1.jpg' %}" alt="product"/>
+                                    
+                                    <span class="btn-like"></span>
+                                    <div class="product-label">
+                                        <span class="product-label-discount">-20%</span>
+                                        <span class="product-label-new">new</span>
+                                    </div>
+                                    <div class="curtain-2 curtain">
+                                        <div class="fon"></div>
+                                        <div class="timer-block">
+                                            <span class="text">This limited offer ends in:</span>
+                                            <div class="timer">
+                                                <div class="section day">
+                                                    <div class="number">21</div>
+                                                    <div class="sub-text">days</div>
+                                                </div>
+                                                <div class="separator">/</div>
+                                                <div class="section hrs">
+                                                    <div class="number">21</div>
+                                                    <div class="sub-text">hrs</div>
+                                                </div>
+                                                <div class="separator">:</div>
+                                                <div class="section min">
+                                                    <div class="number">10</div>
+                                                    <div class="sub-text">min</div>
+                                                </div>
+                                                <div class="separator">:</div>
+                                                <div class="section sec">
+                                                    <div class="number">54</div>
+                                                    <div class="sub-text">sec</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="price">
+                                        <span class="special-price">$185.22</span>
+                                        <span class="old-price">$199.95</span>
+                                    </p>
+                                    <a href="#" class="product-button-add icon-add"></a>
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="row">
+                                        <div class="col-left">
+                                            <div class="product-description">
+                                                <a href="#">ladies` jogging top</a>
+                                            </div>
+                                            <a href="#" class="product-button-add icon-add"></a>
+                                            <p class="price">
+                                                <span class="special-price">$185.22</span>
+                                                <span class="old-price">$199.95</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-right">
+                                            <ul class="product-color">
+                                                <li>
+                                                    <img src="{% static 'images/color/color-5.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-4.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-3.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-2.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-1.png' %}" alt="#"/>
+                                                </li>
+                                            </ul>
+                                            <ul class="product-size">
+                                                <li>xl</li>
+                                                <li class="disabled">l</li>
+                                                <li class="disabled">m</li>
+                                                <li>s</li>
+                                                <li>xs</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-hidden-bl-wrapp-1">
+                                <div class="product-hidden-block-1">
+                                    <div class="hidden-body">
+                                        <div class="row">
+                                            <div class="col-left">
+                                                <a href="#">
+                                                    <span class="icon-stack icon"></span>
+                                                    <span class="text">compare</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-right">
+                                                <ul class="stars-block">
+                                                    <li class="icon-star-empty active"></li>
+                                                    <li class="icon-star-empty active"></li>
+                                                    <li class="icon-star-empty active"></li>
+                                                    <li class="icon-star-empty"></li>
+                                                    <li class="icon-star-empty"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-hidden-block-2">
+                                <ul class="preview-images-wrapp">
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/2_1.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/2_1.jpg' %}"/>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/2_2.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/2_2.jpg' %}"/>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/2_3.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/2_3.jpg' %}"/>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/2_4.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/2_4.jpg' %}"/>
+                                    </li>
                                 </ul>
-                                <div class="clearfix"></div>
-                                <p class="price">
-                                    <span class="special-price">$185.22</span>
-                                    <span class="old-price">$199.95</span>
-                                </p>
-                                <div class="clearfix"></div>
-                                <p class="description">Made with the perfect blend of cotton and cashmere, this v-neck sweater is sharp and stylish. Wear it on its own or as a warm layer over t-shirts and button-ups.</p>
-                                <div class="settings">
-                                    <ul class="color">
-                                        <li>
-                                            <img src="images/color/color-1.png" alt="alt"/>
-                                        </li>
-                                        <li>
-                                            <img src="images/color/color-2.png" alt="alt"/>
-                                        </li>
-                                        <li class="active">
-                                            <img src="images/color/color-3.png" alt="alt"/>
-                                        </li>
-                                        <li>
-                                            <img src="images/color/color-4.png" alt="alt"/>
-                                        </li>
-                                        <li>
-                                            <img src="images/color/color-5.png" alt="alt"/>
-                                        </li>
-                                    </ul>
-                                    <ul class="size">
-                                        <li class="active">xs</li>
-                                        <li>s</li>
-                                        <li class="disabled">m</li>
-                                        <li class="disabled">l</li>
-                                        <li class="disabled">xl</li>
-                                    </ul>
-                                    <div class="clearfix"></div>
-                                    <div class="count count-product">
-                                        <div class="btn-less tt-btn">
-                                            <span class="icon icon-chevron-left"></span>
+                            </div>
+                        </div>
+                    </li> -->
+    
+                    <!--<li class="grid-item new">
+                        <div class="product"  data-product-id="3">
+                            <div class="substrate"></div>
+                            <div class="product-main-inside">
+                                <div class="product-image-block">
+                                    <img src="{% static 'images/product/product_images/men/3_1.jpg' %}" alt="product"/>
+                                    
+                                    <span class="btn-like"></span>
+                                    <div class="product-label">
+                                        <span class="product-label-new">new</span>
+                                    </div>
+                                    <p class="price">
+                                        <span class="single-price">$199.99</span>
+                                    </p>
+                                    <a href="#" class="product-button-add icon-add"></a>
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="row">
+                                        <div class="col-left">
+                                            <div class="product-description">
+                                                <a href="#">ladies` jogging top</a>
+                                            </div>
+                                            <a href="#" class="product-button-add icon-add"></a>
+                                            <p class="price">
+                                                <span class="single-price">$199.99</span>
+                                            </p>
                                         </div>
-                                        <input type="text" name="qty" class="output" data-max="4" value="1">
-                                        <div class="btn-more tt-btn">
-                                            <span class="icon icon-chevron-right"></span>
+                                        <div class="col-right">
+                                            <ul class="product-color">
+                                                <li>
+                                                    <img src="{% static 'images/color/color-5.png' %}" alt="alt"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-4.png' %}" alt="alt"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-3.png' %}" alt="alt"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-2.png' %}" alt="alt"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-1.png' %}" alt="alt"/>
+                                                </li>
+                                            </ul>
+                                            <ul class="product-size">
+                                                <li>xl</li>
+                                                <li class="disabled">l</li>
+                                                <li class="disabled">m</li>
+                                                <li>s</li>
+                                                <li>xs</li>
+                                            </ul>
                                         </div>
-                                    </div>
-                                    <div class="tt-btn-1">
-                                        <span>add to cart</span>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div class="btn-2-3-group">
-                                        <a href="#" class="tt-btn-2 active">
-                                            <span class="icon icon-heart"></span>
-                                        </a> 
-                                        <a href="#" class="tt-btn-3">
-                                            <span class="icon icon-stack"></span>
-                                        </a>
-                                    </div>
-                                    <div class="social">
-                                        <a href="#">
-                                            <span class="icon-facebook icon"></span>
-                                        </a>
-                                        <a href="#">
-                                            <span class="icon-twitter icon"></span>
-                                        </a>
-                                        <a href="#">
-                                            <span class="icon-google icon"></span>
-                                        </a>
-                                        <a href="#">
-                                            <span class="icon-tumblr icon"></span>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="clearfix"></div>
+                            <div class="product-hidden-bl-wrapp-1">
+                                <div class="product-hidden-block-1">
+                                    <div class="hidden-body">
+                                        <div class="row">
+                                            <div class="col-left">
+                                                <a href="#">
+                                                    <span class="icon-stack icon"></span>
+                                                    <span class="text">compare</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-right">
+                                                <ul class="stars-block">
+                                                    <li class="icon-star-empty active"></li>
+                                                    <li class="icon-star-empty active"></li>
+                                                    <li class="icon-star-empty active"></li>
+                                                    <li class="icon-star-empty"></li>
+                                                    <li class="icon-star-empty"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-hidden-block-2">
+                                <ul class="preview-images-wrapp">
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/3_1.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/3_1.jpg' %}"/>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/3_2.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/3_2.jpg' %}"/>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/3_3.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/3_3.jpg' %}"/>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/3_4.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/3_4.jpg' %}"/>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+                    </li>
+    
+                    <li class="grid-item sale top">
+                        <div class="product"  data-product-id="4">
+                            <div class="substrate"></div>
+                            <div class="product-main-inside">
+                                <div class="product-image-block">
+                                    <img src="{% static 'images/product/product_images/men/4_1.jpg' %}" alt="product"/>
+                                    
+                                    <span class="btn-like active"></span>
+                                    <div class="product-label">
+                                        <span class="product-label-discount">-20%</span>
+                                    </div>
+                                    <p class="price">
+                                        <span class="special-price">$185.22</span>
+                                        <span class="old-price">$199.95</span>
+                                    </p>
+                                    <a href="#" class="product-button-add icon-add"></a>
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="row">
+                                        <div class="col-left">
+                                            <div class="product-description">
+                                                <a href="#">ladies` jogging top</a>
+                                            </div>
+                                            <a href="#" class="product-button-add icon-add"></a>
+                                            <p class="price">
+                                                <span class="special-price">$185.22</span>
+                                                <span class="old-price">$199.95</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-right">
+                                            <ul class="product-color">
+                                                <li>
+                                                    <img src="{% static 'images/color/color-5.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-4.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-3.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-2.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-1.png' %}" alt="#"/>
+                                                </li>
+                                            </ul>
+                                            <ul class="product-size">
+                                                <li>xl</li>
+                                                <li class="disabled">l</li>
+                                                <li class="disabled">m</li>
+                                                <li>s</li>
+                                                <li>xs</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-hidden-bl-wrapp-1">
+                                <div class="product-hidden-block-1">
+                                    <div class="hidden-body">
+                                        <div class="row">
+                                            <div class="col-left">
+                                                <a href="#">
+                                                    <span class="icon-stack icon"></span>
+                                                    <span class="text">compare</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-right">
+                                                <ul class="stars-block">
+                                                    <li class="icon-star-empty active"></li>
+                                                    <li class="icon-star-empty active"></li>
+                                                    <li class="icon-star-empty active"></li>
+                                                    <li class="icon-star-empty"></li>
+                                                    <li class="icon-star-empty"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-hidden-block-2">
+                                <ul class="preview-images-wrapp">
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/4_1.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/4_1.jpg' %}"/>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/4_2.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/4_2.jpg' %}"/>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/4_3.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/4_3.jpg' %}"/>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/4_4.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/4_4.jpg' %}"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+    
+                    <li class="grid-item best top">
+                        <div class="product right-hover"  data-product-id="5">
+                            <div class="substrate"></div>
+                            <div class="product-main-inside">
+                                <div class="product-image-block">
+                                    <img src="{% static 'images/product/product_images/men/5_1.jpg' %}" alt="product"/>
+                                    
+                                    <span class="btn-like"></span>
+                                    <p class="price">
+                                        <span class="single-price">$199.99</span>
+                                    </p>
+                                    <a href="#" class="product-button-add icon-add"></a>
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="row">
+                                        <div class="col-left">
+                                            <div class="product-description">
+                                                <a href="#">ladies` jogging top</a>
+                                            </div>
+                                            <a href="#" class="product-button-add icon-add"></a>
+                                            <p class="price">
+                                                <span class="single-price">$199.99</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-right">
+                                            <ul class="product-color">
+                                                <li>
+                                                    <img src="{% static 'images/color/color-5.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-4.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-3.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-2.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-1.png' %}" alt="#"/>
+                                                </li>
+                                            </ul>
+                                            <ul class="product-size">
+                                                <li>xl</li>
+                                                <li class="disabled">l</li>
+                                                <li class="disabled">m</li>
+                                                <li>s</li>
+                                                <li>xs</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-hidden-bl-wrapp-1">
+                                <div class="product-hidden-block-1">
+                                    <div class="hidden-body">
+                                        <div class="row">
+                                            <div class="col-left">
+                                                <a href="#">
+                                                    <span class="icon-stack icon"></span>
+                                                    <span class="text">compare</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-right">
+                                                <ul class="stars-block">
+                                                    <li class="icon-star-empty active"></li>
+                                                    <li class="icon-star-empty active"></li>
+                                                    <li class="icon-star-empty active"></li>
+                                                    <li class="icon-star-empty"></li>
+                                                    <li class="icon-star-empty"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-hidden-block-2">
+                                <ul class="preview-images-wrapp">
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/5_1.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/5_1.jpg' %}"/>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/5_2.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/5_2.jpg' %}"/>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/5_3.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/5_3.jpg' %}"/>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/5_4.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/5_4.jpg' %}"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+    
+                    <li class="grid-item sale top">
+                        <div class="product no-preview"  data-product-id="6">
+                            <div class="substrate"></div>
+                            <div class="product-main-inside">
+                                <div class="product-image-block">
+                                    <img src="{% static 'images/product/product_images/men/6_1.jpg' %}" alt="product"/>
+                                    
+                                    <span class="btn-like"></span>
+                                    <div class="product-label">
+                                        <span class="product-label-discount">-20%</span>
+                                    </div>
+                                    <div class="curtain-1 curtain">
+                                        <div class="fon"></div>
+                                        <span class="text">out of stock</span>
+                                    </div>
+                                    <p class="price">
+                                        <span class="special-price">$185.22</span>
+                                        <span class="old-price">$199.95</span>
+                                    </p>
+                                    <a href="#" class="product-button-add icon-add"></a>
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="row">
+                                        <div class="col-left">
+                                            <div class="product-description">
+                                                <a href="#">ladies` jogging top</a>
+                                            </div>
+                                            <a href="#" class="product-button-add icon-add"></a>
+                                            <p class="price">
+                                                <span class="special-price">$185.22</span>
+                                                <span class="old-price">$199.95</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-right">
+                                            <ul class="product-color">
+                                                <li>
+                                                    <img src="{% static 'images/color/color-5.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-4.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-3.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-2.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-1.png' %}" alt="#"/>
+                                                </li>
+                                            </ul>
+                                            <ul class="product-size">
+                                                <li>xl</li>
+                                                <li class="disabled">l</li>
+                                                <li class="disabled">m</li>
+                                                <li>s</li>
+                                                <li>xs</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-hidden-bl-wrapp-1">
+                                <div class="product-hidden-block-1">
+                                    <div class="hidden-body">
+                                        <div class="row">
+                                            <div class="col-left">
+                                                <a href="#">
+                                                    <span class="icon-stack icon"></span>
+                                                    <span class="text">compare</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-right">
+                                                <ul class="stars-block">
+                                                    <li class="icon-star-empty active"></li>
+                                                    <li class="icon-star-empty active"></li>
+                                                    <li class="icon-star-empty active"></li>
+                                                    <li class="icon-star-empty"></li>
+                                                    <li class="icon-star-empty"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+    
+                    <li class="grid-item new top">
+                        <div class="product"  data-product-id="7">
+                            <div class="substrate"></div>
+                            <div class="product-main-inside">
+                                <div class="product-image-block">
+                                    <img src="{% static 'images/product/product_images/men/7_1.jpg' %}" alt="product"/>
+                                    
+                                    <span class="btn-like"></span>
+                                    <div class="product-label">
+                                        <span class="product-label-new">new</span>
+                                    </div>
+                                    <p class="price">
+                                        <span class="single-price">$199.99</span>
+                                    </p>
+                                    <a href="#" class="product-button-add icon-add"></a>
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="row">
+                                        <div class="col-left">
+                                            <div class="product-description">
+                                                <a href="#">ladies` jogging top</a>
+                                            </div>
+                                            <a href="#" class="product-button-add icon-add"></a>
+                                            <p class="price">
+                                                <span class="single-price">$199.99</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-right">
+                                            <ul class="product-color">
+                                                <li>
+                                                    <img src="{% static 'images/color/color-5.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-4.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-3.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-2.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-1.png' %}" alt="#"/>
+                                                </li>
+                                            </ul>
+                                            <ul class="product-size">
+                                                <li>xl</li>
+                                                <li class="disabled">l</li>
+                                                <li class="disabled">m</li>
+                                                <li>s</li>
+                                                <li>xs</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-hidden-bl-wrapp-1">
+                                <div class="product-hidden-block-1">
+                                    <div class="hidden-body">
+                                        <div class="row">
+                                            <div class="col-left">
+                                                <a href="#" class="add-to-compare">
+                                                    <span class="icon-stack icon"></span>
+                                                    <span class="text">compare</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-right">
+                                                <ul class="stars-block">
+                                                    <li class="icon-star-empty active"></li>
+                                                    <li class="icon-star-empty active"></li>
+                                                    <li class="icon-star-empty active"></li>
+                                                    <li class="icon-star-empty"></li>
+                                                    <li class="icon-star-empty"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-hidden-block-2">
+                                <ul class="preview-images-wrapp">
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/7_1.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/7_1.jpg' %}"/>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/7_2.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/7_2.jpg' %}"/>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/7_3.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/7_3.jpg' %}"/>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/7_4.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/7_4.jpg' %}"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+    
+                    <li class="grid-item sale">
+                        <div class="product"  data-product-id="8">
+                            <div class="substrate"></div>
+                            <div class="product-main-inside">
+                                <div class="product-image-block">
+                                    <img src="{% static 'images/product/product_images/men/8_1.jpg' %}" alt="product"/>
+                                    
+                                    <span class="btn-like"></span>
+                                    <div class="product-label">
+                                        <span class="product-label-discount">-20%</span>
+                                    </div>
+                                    <p class="price">
+                                        <span class="special-price">$185.22</span>
+                                        <span class="old-price">$199.95</span>
+                                    </p>
+                                    <a href="#" class="product-button-add icon-add"></a>
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="row">
+                                        <div class="col-left">
+                                            <div class="product-description">
+                                                <a href="#">ladies` jogging top</a>
+                                            </div>
+                                            <a href="#" class="product-button-add icon-add"></a>
+                                            <p class="price">
+                                                <span class="special-price">$185.22</span>
+                                                <span class="old-price">$199.95</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-right">
+                                            <ul class="product-color">
+                                                <li>
+                                                    <img src="{% static 'images/color/color-5.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-4.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-3.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-2.png' %}" alt="#"/>
+                                                </li>
+                                                <li>
+                                                    <img src="{% static 'images/color/color-1.png' %}" alt="#"/>
+                                                </li>
+                                            </ul>
+                                            <ul class="product-size">
+                                                <li>xl</li>
+                                                <li class="disabled">l</li>
+                                                <li class="disabled">m</li>
+                                                <li>s</li>
+                                                <li>xs</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-hidden-bl-wrapp-1">
+                                <div class="product-hidden-block-1">
+                                    <div class="hidden-body">
+                                        <div class="row">
+                                            <div class="col-left">
+                                                <a href="#">
+                                                    <span class="icon-stack icon"></span>
+                                                    <span class="text">compare</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-right">
+                                                <ul class="stars-block">
+                                                    <li class="icon-star-empty active"></li>
+                                                    <li class="icon-star-empty active"></li>
+                                                    <li class="icon-star-empty active"></li>
+                                                    <li class="icon-star-empty"></li>
+                                                    <li class="icon-star-empty"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-hidden-block-2">
+                                <ul class="preview-images-wrapp">
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/8_1.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/8_1.jpg' %}"/>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/8_2.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/8_2.jpg' %}"/>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/8_3.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/8_3.jpg' %}"/>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/product/product_images/men/8_4.jpg' %}" alt="preview" data-preview="{% static 'images/product/product_images/men/8_4.jpg' %}"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- BLOG -->
+    {% comment %} <h2 class="head-text head-text-2" style="text-align: center;">Ultimos Articulos de Nuestro Blog</h2>
+    <div class="container-fluid none-padding">
+        <div class="blog owl-carousel">
+            <div class="blog-box blog-box-1">
+                <img src="{% static 'images/product/home_page/blog/photo-1.jpg' %}" alt="blog">
+                <div class="border-block">
+                    <div class="curtain"></div>
+                    <div class="text-1">December 5, 2016</div>
+                    <h3 class="text-2">{$ elemento1.name $}</h3>
+                    <div class="info-block">
+                        <div class="icon-comment-square icon"></div>
+                        <div class="text">36 <span class="text-comment">comments</span></div>
+                        <div class="icon-head icon"></div>
+                        <div class="text">1241</div>
                     </div>
+                    <a href="#" class="tt-btn">read post</a>
                 </div>
             </div>
-        </div> {% endcomment %}
+            <div class="blog-box blog-box-2">
+                <img src="{% static 'images/product/home_page/blog/photo-2.jpg' %}" alt="blog"/>
+                <div class="border-block">
+                    <div class="curtain"></div>
+                    <div class="text-1">December 5, 2016</div>
+                    <h3 class="text-2">{$ elemento2.name $}</h3>
+                    <div class="info-block">
+                        <div class="icon-comment-square icon"></div>
+                        <div class="text">36 <span class="text-comment">comments</span></div>
+                        <div class="icon-head icon"></div>
+                        <div class="text">1241</div>
+                    </div>
+                    <a href="#" class="tt-btn">read post</a>
+                </div>
+            </div>
+            <div class="blog-box blog-box-3">
+                <img src="{% static 'images/product/home_page/blog/photo-3.jpg' %}" alt="blog"/>
+                <div class="border-block">
+                    <div class="curtain"></div>
+                    <div class="text-1">December 5, 2016</div>
+                    <h3 class="text-2">{$ elemento3.name $}</h3>
+                    <div class="info-block">
+                        <div class="icon-comment-square icon"></div>
+                        <div class="text">36 <span class="text-comment">comments</span></div>
+                        <div class="icon-head icon"></div>
+                        <div class="text">1241</div>
+                    </div>
+                    <a href="#" class="tt-btn">read post</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> {% endcomment %}
 
+
+{% endblock content %}
+
+{% comment %}  
+{% block javascript %} 
+<script src="{% static 'vue/app/app.js' %}"></script>
+{% endblock javascript %} {% endcomment %}
