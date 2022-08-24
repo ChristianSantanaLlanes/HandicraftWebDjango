@@ -212,14 +212,12 @@ WSGI_APPLICATION = "core.wsgi.application"
 
 
 if ON_PRODUCTION:
+    import dj_database_url
+    from decouple import config
     DATABASES = {
-        "default": {
-            "ENGINE": DJANGO_DB_ENGINE,
-            "NAME": DJANGO_DB_NAME,
-            "USER": DJANGO_DB_USER,
-            "PASSWORD": DJANGO_DB_PASSWORD,
-            "HOST": DJANGO_DB_HOST,
-        }
+        "default": dj_database_url.config(
+            default=config('DATABASE_URL')       
+        )
     }
 else:
     # SqliteDB
@@ -262,8 +260,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = "static/"
-# STATIC_ROOT = "static"
-STATICFILES_DIRS = [STATIC_DIR]
+STATIC_ROOT = "static"
+# STATICFILES_DIRS = [STATIC_DIR]
 STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 WHITENOISE_AUTOREFRESH = True
 
