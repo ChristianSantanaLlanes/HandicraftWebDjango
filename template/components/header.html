@@ -139,7 +139,7 @@
                                             </li>
                                             {% for categoria in categorias %}
                                                 <li>
-                                                    <a href="/list/products/{{categoria.id}}/">{{categoria.name}}</a>
+                                                    <a href="/list/products/{{categoria.name}}/">{{categoria.name}}</a>
                                                 </li>
                                             {% endfor %}
                                         </ul>
@@ -231,7 +231,7 @@
                 <div class="search-block">
                     <div class="search-wrapp">
                         <span class="icon-cross2 icon close-search"></span>
-                        <form>
+                        <form method="get" action="/search/">
                             <input type="text" name="search" placeholder="Search Request...">
                         </form>
                     </div>
@@ -408,9 +408,14 @@
                         <li class="head-btn back-category">
                             <a href="#">Categorias</a>
                         </li> 
-                        <li v-for="(seccion, i) in lista_secciones" :key="i">
-                            <a :href="'/list/products/'+seccion.name">{$ seccion.name $}</a>
+                        <li>
+                            <a href="#">All</a>
                         </li>
+                        {% for categoria in categorias %}
+                            <li>
+                                <a href="/list/products/{{categoria.name}}/">{{categoria.name}}</a>
+                            </li>
+                        {% endfor %}
                     </ul>
                 </li>
                 <li class="icon-next">

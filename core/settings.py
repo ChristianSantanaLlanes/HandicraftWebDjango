@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 import os
 from datetime import timedelta
 from pathlib import Path
+from django.urls import reverse_lazy
 
 import environ
 
@@ -110,6 +111,7 @@ INSTALLED_APPS = [
     # Installed Apps
     "user",
     "app",
+    "car",
 ]
 
 REST_FRAMEWORK = {
@@ -260,8 +262,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = "static/"
-STATIC_ROOT = "static"
-# STATICFILES_DIRS = [STATIC_DIR]
+# STATIC_ROOT = "static"
+STATICFILES_DIRS = [STATIC_DIR]
 STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 WHITENOISE_AUTOREFRESH = True
 
@@ -287,3 +289,5 @@ CKEDITOR_CONFIGS = {
         'width': '100%'
     },
 }
+
+LOGIN_REDIRECT_URL = reverse_lazy('list-product')

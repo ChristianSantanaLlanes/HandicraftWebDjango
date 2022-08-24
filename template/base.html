@@ -14,26 +14,19 @@
 
     </head>
     <body>
-        <div id="app">
-            {% include 'components/header.html' %}
+      {% include 'components/header.html' %}
 
-            <div class="top-spacer"></div>  
+      <div class="top-spacer"></div>  
 
             
-            {% block content %}{% endblock content %}
+      {% block content %}{% endblock content %}
 
                         
             <!-- {% include 'components/newsletter.html' %} -->
 
-            {% include 'components/footer.html' %}
-        </div>
+      {% include 'components/footer.html' %}
         
-        <script src="{% static 'vue/vue.js' %}"></script>
-        <script src="{% static 'vue/axios.js' %}"></script>
-        {% block javascript %}
-        {% endblock javascript %}
-        
-        {% include 'components/javascript.html' %}
+      {% include 'components/javascript.html' %}
         
 
   </body>

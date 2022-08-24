@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Handicraft | Registro{% endblock title %}
+{% block content %}
+    <div class="breadcrumbs">
+        <div class="container-fluid">
+            <div class="boxed">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">Crear una nueva cuenta</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="head-text-type1 new-account-head">
+        <H1>Crear Nueva Cuenta</H1>
+    </div>
+
+    <div class="container-fluid">
+        <div class="boxed">
+            <div class="new-account">
+                <form action="#">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <H4 class="label-text">Informacion Personal</H4>
+                        </div>
+                        <div class="col-md-5 col-sm-6">
+                            <input class="tt-input" type="text" placeholder="Nombre">
+                            <input class="tt-input" type="email" placeholder="Direccion de correo">
+                        </div>
+                        <div class="col-md-5 col-sm-6">
+                            <input class="tt-input" type="text"  placeholder="Apellido">
+                            <input class="tt-input" type="text"  placeholder="Numero de Telefono">
+                        </div>
+                        <div class="col-md-5 col-sm-6">
+                            <input class="tt-input" type="text"  placeholder="Nombre de Usuario">
+                        </div>
+                        {% comment %} <div class="col-md-12">
+                            <label class="tt-checkbox">
+                                <input type="checkbox">
+                                <span class="box"></span>
+                                <span>Sign Up for Newsletter</span>
+                            </label>
+                        </div> {% endcomment %}
+                    </div>
+                    <div class="col-md-12 border-top"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <H4 class="label-text">Completar Registro</H4>
+                        </div>
+                        <div class="col-md-5 col-sm-6">
+                            <input class="tt-input" type="password" placeholder="Contraseña">
+                        </div>
+                        <div class="col-md-5 col-sm-6">
+                            <input class="tt-input" type="password"  placeholder="Confirmar Contraseña">
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" class="btn tt-btn-type1" value="registrar">
+                        </div>
+                    </div>                            
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

@@ -153,7 +153,7 @@
                             <li class="disabled">xl</li>
                         </ul> {% endcomment %}
                         <div class="clearfix"></div>
-                        <div class="count count-product">
+                        <!-- <div class="count count-product">
                             <div class="btn-less tt-btn">
                                 <span class="icon icon-chevron-left"></span>
                             </div>
@@ -161,10 +161,14 @@
                             <div class="btn-more tt-btn">
                                 <span class="icon icon-chevron-right"></span>
                             </div>
-                        </div>
-                        <div class="tt-btn-1">
-                            <span>add to cart</span>
-                        </div>
+                        </div> -->
+                        {% if product.en_venta == True %}
+                            <div class="tt-btn-1">
+                                <span><a href="https://wa.me/5358611928/?text=Hola me interesa comprar este producto: {{product.name}}"> Comprar</a></span>
+                            </div>
+                        {% else %}
+                        {% endif %}
+                        
                         <div class="clearfix"></div>
                         {% comment %} <div class="btn-2-3-group">
                             <a href="#" class="tt-btn-2 active">
@@ -776,7 +780,3 @@
     </div>
 </div> {% endcomment %}
 {% endblock content %}
-
-{% block javascript %}
-<script src="{% static 'vue/app/header_app.js' %}"></script>
-{% endblock javascript %}

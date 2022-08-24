@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Handicraft | Cuenta{% endblock title %}
+{% block content %}
+    <div class="breadcrumbs">
+        <div class="container-fluid">
+            <div class="boxed">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">Mi Cuenta</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="head-text-type1 my-account-head">
+        <H1>Mi Cuenta</H1>
+    </div>
+
+    <div class="container-fluid">
+        <div class="my-account-block">
+            <div class="boxed">
+                <div class="row">
+                    <div class="col-md-5 col-sm-6 col-xs-6 border-right">
+                        <div class="left-col">
+                            <h2>Inicia sesion</h2>
+                            <p>Inicie sesion para poder comprar<br/>en nuestra tienda.</p>
+                            <form action="/listing/">
+                                {% csrf_token %}
+                                {{form.email}}
+                                {{form.password}}
+                                {% comment %} <input type="email" class="tt-input" placeholder="Direccion de correo"> {% endcomment %}
+                                {% comment %} <input type="text" class="tt-input" placeholder="Contraseña"> {% endcomment %}
+                                {% comment %} <p>
+                                    <a href="#" class="lose-psd">Forgot Your Password?</a>
+                                </p> {% endcomment %}
+                                <input type="submit" class="btn tt-btn-type1" value="Iniciar" />
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-6 col-xs-6">
+                        <div class="right-col">
+                            <h2>Crear una nueva cuenta</h2>
+                            <p>Crearce una cuenta en nuestra plataforma le permite comprar en nuestra tienda<br/>Puede guardar su direccion para una compra mas rapida.</p>
+                            <a href="/register/" class="tt-btn-black-border">Crear Cuenta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

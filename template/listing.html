@@ -18,11 +18,11 @@
             <div class="listing">
                 <div class="head-baner">
                     <div class="image-block">
-                        <img src="{% static 'images/product/listing/photo-1.jpg' %}" alt="alt">
+                        <img src="{{section.imagen}}" alt="alt">
                     </div>
                     <div class="text-block">
                         <span class="head">{{section.name}}</span>
-                        <p>Fashion for women who aren’t defined by trends, Buyshop offers a wardrobe brimming with party dresses, casual daywear and a killer collection of shoes and accessories to match. Dresses are our thing and we have an array tailored to all occasions including classic LBDs, party dresses to die for and those all-important work dresses.</p>
+                        <p>{{section.description}}</p>
                     </div>
                 </div>
                 <div class="row">

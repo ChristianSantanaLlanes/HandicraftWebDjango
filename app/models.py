@@ -8,6 +8,7 @@ from ckeditor.fields import RichTextField
 class Section(models.Model):
     name = models.CharField('Nombre', max_length=30)
     description = models.TextField('Descripcion')
+    imagen = models.CharField('Imagen', max_length=100)
     
     def __str__(self):
         return self.name

@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Handicraft | Carrito{% endblock title %}
+{% block content %}
+    <div class="breadcrumbs">
+        <div class="container-fluid">
+            <div class="boxed">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">shopping cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="head-text-type1 shopping-cart-head">
+        <h1>shopping cart</h1>
+    </div>
+
+    <div class="container-fluid">
+        <div class="boxed">
+            <div class="shopping-cart">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 hidden-xs">
+                        <span class="col-name">product</span>
+                    </div>
+                    <div class="col-md-3 col-sm-3 hidden-xs">
+                        <span class="col-name">price</span>
+                    </div>
+                    <div class="col-md-1 col-sm-1 hidden-xs">
+                        <span class="col-name">qty</span>
+                    </div>
+                    <div class="col-md-2 col-sm-2 hidden-xs">
+                        <span class="col-name">total</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="shopping-product">
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="block-1">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-5 col-xs-5">
+                                        <a href="#" class="image">
+                                            <img src="images/product/shopping_cart/11_1.jpg" alt="photo"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-7 col-xs-7">
+                                        <div class="info">
+                                            <a href="#" class="text-1">ladies` trousers</a>
+                                            <div class="color">
+                                                <span style="background-color: #d9829a;"></span>
+                                            </div>
+                                            <div class="size">
+                                                <span>xs</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-4">
+                            <div class="tt-price">
+                                <div class="full-price">$199.95</div>
+                                <div hidden class="discount-price">
+                                    <div class="first-price">$199.95</div>
+                                    <div class="last-price">$185.22</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-3">
+                            <div class="settings">
+                                <div class="count count-product only-output">
+                                    <input type="text" name="qty" class="output" data-max="4" value="1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-3">
+                            <div class="tt-price">
+                                <div class="full-price">$199.95</div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-12">
+                            <a href="#" class="icon icon-cog"></a>
+                            <a href="#" class="icon icon-trash"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row btns-row">
+                    <div class="col-md-8 col-sm-8">
+                        <a href="#" class="tt-btn-type1 tt-btn-cart-head">continus shopping</a>
+                        <a href="#" class="tt-btn-type1 tt-btn-cart-head">clear all</a>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <a href="#" class="tt-btn-type1 tt-btn-cart-head">update cart</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <span class="head-text-type2">estimate shipping and tax</span>
+                        <select class="form-control">
+                            <option>United States</option>
+                            <option>United States</option>
+                            <option>United States</option>
+                            <option>United States</option>
+                            <option>United States</option>
+                        </select>
+                        <select class="form-control">
+                            <option>Please select region, state or province</option>
+                            <option>Please select region, state or province</option>
+                            <option>Please select region, state or province</option>
+                            <option>Please select region, state or province</option>
+                            <option>Please select region, state or province</option>
+                        </select>
+                        <input type="text" class="tt-input" placeholder="Zip / Postal code">
+                        <a href="#" class="tt-btn-type1">get quote</a>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <span class="head-text-type2">discount codes</span>
+                        <p>Enter your coupon code if you have one.</p>
+                        <input type="text" class="tt-input">
+                        <a href="#" class="tt-btn-type1">apply coupon</a>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="curtain">
+                            <div class="row">
+                                <div class="col-md-7 col-sm-4 col-sm-offset-1 col-md-offset-0 col-xs-6">
+                                    <span class="h3">subtotal</span>
+                                    <span class="h3">discount</span>
+                                    <span class="h1">grand total</span>
+                                </div>
+                                <div class="col-md-5 col-sm-7 col-xs-6">
+                                    <span class="h3">$199.95</span>
+                                    <span class="h3">-$11.60</span>
+                                    <span class="h1">$188.35</span>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <a href="#" class="tt-btn-type1">proceed to checkout</a>
+                                    <a href="#">Checkout with Multiple Addresses</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
