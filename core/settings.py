@@ -212,12 +212,15 @@ WSGI_APPLICATION = "core.wsgi.application"
 
 
 if ON_PRODUCTION:
-    import dj_database_url
-    from decouple import config
+    
     DATABASES = {
-        "default": dj_database_url.config(
-            default=config('DATABASE_URL')       
-        )
+        "default": {
+            "ENGINE": DJANGO_DB_ENGINE,
+            "NAME": DJANGO_DB_NAME,
+            "USER": DJANGO_DB_USER,
+            "PASSWORD": DJANGO_DB_PASSWORD,
+            "HOST": DJANGO_DB_HOST,
+        }
     }
 else:
     # SqliteDB
