@@ -220,7 +220,6 @@ if ON_PRODUCTION:
             "USER": "bf4179a2bf47c5",
             "PASSWORD": "03377b5e",
             "HOST": "us-cdbr-east-06.cleardb.net",
-            "PORT": '5432',
         }
     }
 else:
