@@ -53,3 +53,4 @@ zipp==3.8.0
 django-ckeditor
 psycopg
 dj-database-url
+pymysql

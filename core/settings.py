@@ -220,6 +220,7 @@ if ON_PRODUCTION:
             "USER": DJANGO_DB_USER,
             "PASSWORD": DJANGO_DB_PASSWORD,
             "HOST": DJANGO_DB_HOST,
+            "PORT": '5432',
         }
     }
 else:
