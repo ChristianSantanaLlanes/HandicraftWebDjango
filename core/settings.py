@@ -215,30 +215,20 @@ if ON_PRODUCTION:
     
     DATABASES = {
         "default": {
-            "ENGINE": "django.db.backends.postgresql",
-            "NAME": "d86aen4ha8g2ej",
-            "USER": "xbuqnijlgmvnit",
-            "PASSWORD": "995919731bee73e36bb60720af9681e639ca16acdbfb4da8f4fc732b67555a0c",
-            "HOST": "ec2-44-207-126-176.compute-1.amazonaws.com",
+            "ENGINE": "django.db.backends.mysql",
+            "NAME": "heroku_0250ef0eef5ad71",
+            "USER": "bf4179a2bf47c5",
+            "PASSWORD": "03377b5e",
+            "HOST": "us-cdbr-east-06.cleardb.net",
             "PORT": '5432',
         }
     }
 else:
     # SqliteDB
-    # DATABASES = {
-    #     "default": {
-    #         "ENGINE": "django.db.backends.sqlite3",
-    #         "NAME": BASE_DIR / "db.sqlite3",
-    #     }
-    # }
     DATABASES = {
         "default": {
-            "ENGINE": "django.db.backends.postgresql",
-            "NAME": "d86aen4ha8g2ej",
-            "USER": "xbuqnijlgmvnit",
-            "PASSWORD": "995919731bee73e36bb60720af9681e639ca16acdbfb4da8f4fc732b67555a0c",
-            "HOST": "ec2-44-207-126-176.compute-1.amazonaws.com",
-            "PORT": '5432',
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
         }
     }
 # Password validation
