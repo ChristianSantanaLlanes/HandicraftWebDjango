@@ -225,10 +225,20 @@ if ON_PRODUCTION:
     }
 else:
     # SqliteDB
+    # DATABASES = {
+    #     "default": {
+    #         "ENGINE": "django.db.backends.sqlite3",
+    #         "NAME": BASE_DIR / "db.sqlite3",
+    #     }
+    # }
     DATABASES = {
         "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": BASE_DIR / "db.sqlite3",
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": "d86aen4ha8g2ej",
+            "USER": "xbuqnijlgmvnit",
+            "PASSWORD": "995919731bee73e36bb60720af9681e639ca16acdbfb4da8f4fc732b67555a0c",
+            "HOST": "ec2-44-207-126-176.compute-1.amazonaws.com",
+            "PORT": '5432',
         }
     }
 # Password validation
